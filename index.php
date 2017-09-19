@@ -54,7 +54,7 @@ $articlesList = $articles->find([],['limit' => 5]);
 					<p style="color:green">Thanks for your subscription.</p>
 					<?php } ?>
 					<form name="subscribe" method="post" action="subscribe.php">
-						<input type="text" name="email">
+						<input type="email" name="email" required>
 						<button type="sumbmit">Subscribe Now</button>
 					</form>
 				</div>
